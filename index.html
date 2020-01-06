@@ -1,0 +1,35 @@
+
+
+<body>
+    <div id="app">
+      <article>
+        {{msg}}
+      </article>
+      </div>
+</body>
+<!-- <script type = "module">
+     import compile from "./compile.js"
+    let resl =  compile("姓名：{{name}}, 年龄：{{age}}，居住省份：{{addr.province}}", {
+            name:"monica",
+            age:16,
+            addr:{
+                    province:"黑龙江",
+                    city:"哈尔滨"
+            }
+        })
+        console.log(resl)
+</script> -->
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script>
+var app = new Vue({
+  el: '#app',
+  data: {
+   msg:'hello,new vue'
+  }
+})
+</script>
+<style>
+article{
+        font-size: 20px;
+}
+</style>
